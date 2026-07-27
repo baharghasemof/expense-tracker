@@ -7,6 +7,8 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 
 ## Features
 - Expense registration
+- User input
+- Formatted output
 
 ## What I Learned
 
@@ -19,7 +21,8 @@ Through this project, I learned:
 ### Version 1.0
 - Created the Expense Tracker project.
 - Planned the project structure.
-- Created the GitHub repository.
+- Added expense registration.
+- Displayed expense information.
 - Added the README file.
 
 ## Future Improvements
