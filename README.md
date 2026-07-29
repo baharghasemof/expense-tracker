@@ -9,12 +9,16 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Expense registration
 - User input
 - Formatted output
+- Store expenses in a list
 
 ## What I Learned
 
 Through this project, I learned:
 
-- (Coming soon)
+- How to use Python lists.
+- How to store related data in a list.
+- How to use the append() method.
+- How to improve a project step by step using GitHub commits.
 
 ## Version History
 
@@ -24,6 +28,12 @@ Through this project, I learned:
 - Added expense registration.
 - Displayed expense information.
 - Added the README file.
+
+### Version 1.1
+- Introduced Python lists.
+- Stored expense information in a list.
+- Used the append() method.
+- Prepared the project for multiple expense records.
 
 ## Future Improvements
 - Add expense categories
@@ -35,7 +45,7 @@ Through this project, I learned:
 - Edit expenses
 - Delete expenses
 - Generate monthly expense reports
-- Graphical user interface
+- Create a Graphical user interface
 
 ## Author
 Bahar Ghasem Of
