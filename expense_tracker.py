@@ -12,3 +12,5 @@ print("\n=== Expense information ===")
 print(f"name        : {name}")
 print(f"Amount      : {amount}")
 print(f"Category    : {category}")
+
+print("\ntotal expenses recorded: ", len(expenses))
