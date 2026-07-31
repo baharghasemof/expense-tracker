@@ -11,6 +11,7 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Formatted output
 - Store expenses in a list
 - Count stored expenses
+- Display stored expenses
 
 ## What I Learned
 
@@ -39,6 +40,10 @@ Through this project, I learned:
 ### Version 1.2
 - Added expense counter using len().
 - Displayed the total number of stored expenses.
+
+### Version 1.3
+- Displayed all stored expenses.
+- Used a for loop to show expense records.
 
 ## Future Improvements
 - Add expense categories
