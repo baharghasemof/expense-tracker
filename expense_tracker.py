@@ -14,3 +14,9 @@ print(f"Amount      : {amount}")
 print(f"Category    : {category}")
 
 print("\ntotal expenses recorded: ", len(expenses))
+
+print("\n=== All Expenses ===")
+
+for expense in expenses:
+    print(expense)
+    
