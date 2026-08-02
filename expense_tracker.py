@@ -8,6 +8,9 @@ expense = [name, amount, category]
 
 expenses.append(expense)
 
+print("\nlast expense: ")
+print(expenses[-1])
+
 print("\n=== Expense information ===")
 print(f"name        : {name}")
 print(f"Amount      : {amount}")
@@ -19,4 +22,3 @@ print("\n=== All Expenses ===")
 
 for expense in expenses:
     print(expense)
-    
