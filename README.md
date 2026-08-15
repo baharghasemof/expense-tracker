@@ -22,6 +22,8 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Expensive expense checking
 - Discount calculation
 - Category changing
+- Expense quantity
+- Total price calculation
 
 ## What I Learned
 
@@ -35,6 +37,8 @@ Through this project, I learned:
 - How to create and use attributes.
 - How to create and use methods.
 - How to use methods to work with object data.
+- How to add a new attribute to an existing class.
+- How to calculate a total price using quantity and amount.
 
 ## Version History
 
@@ -75,6 +79,15 @@ Through this project, I learned:
 - Created Expense objects and stored them in the expenses list.
 - Used methods to work with Expense objects.
 - Tested the new methods.
+
+### Version 2.1
+
+- Added quantity as an Expense attribute.
+- Updated the Expense class to store item quantity.
+- Added total_price() method.
+- Added total price calculation based on amount and quantity.
+- Updated expense information display to include quantity.
+- Tested the new quantity and total price functionality.
 
 ## Future Improvements
 
