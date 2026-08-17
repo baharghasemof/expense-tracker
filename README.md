@@ -24,6 +24,9 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Category changing
 - Expense quantity
 - Total price calculation
+- Multiple expense registration
+- Repeated user input using while loop
+- Total purchase price calculation
 
 ## What I Learned
 
@@ -39,6 +42,10 @@ Through this project, I learned:
 - How to use methods to work with object data.
 - How to add a new attribute to an existing class.
 - How to calculate a total price using quantity and amount.
+- How to use while loops for repeated user input.
+- How to create multiple objects from one class.
+- How to store multiple objects in a list.
+- How to calculate the total price of multiple expenses.
 
 ## Version History
 
@@ -89,9 +96,19 @@ Through this project, I learned:
 - Updated expense information display to include quantity.
 - Tested the new quantity and total price functionality.
 
+### Version 2.2
+
+- Added multiple expense registration in one program session.
+- Used a while loop to repeatedly collect expense information.
+- Created a separate Expense object for each expense.
+- Stored multiple Expense objects in the expenses list.
+- Added total price display to show_info().
+- Added total purchase price calculation.
+- Displayed the total price of all recorded expenses.
+- Tested the program with multiple expenses.
+
 ## Future Improvements
 
-- Add multiple expense registration in one program session
 - Add expense categories
 - Calculate total expenses
 - Save data to a file
