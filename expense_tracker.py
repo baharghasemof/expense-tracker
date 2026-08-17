@@ -10,6 +10,7 @@ class Expense:
         print("Amount:", self.amount)
         print("Quantity:", self.quantity)
         print("Category:", self.category)
+        print("Total Price:", self.total_price())
 
     def is_expensive(self):
         return self.total_price() >= 50000
@@ -25,33 +26,30 @@ class Expense:
         
 expenses = []
 
-name = input("Expense name: ")
-amount = float(input("Amount: "))
-quantity = int(input("Quantity: "))
-category = input("Category: ")
+continue_adding = "yes"
 
-expense = Expense(name, amount, quantity, category)
-expenses.append(expense)
+while continue_adding == "yes":
+
+    name = input("Expense name: ")
+    amount = float(input("Amount: "))
+    quantity = int(input("Quantity: "))
+    category = input("Category: ")
+
+    expense = Expense( name, amount, quantity, category)
+    expenses.append(expense)
+
+    continue_adding = input("Add another expense? (yes/no): ")
 
 print("\nLast expense:")
 expenses[-1].show_info()
 
-print("\n=== Testing Methods ===")
-
-print("Is expensive:", expense.is_expensive())
-
-print("Amount after 50% discount:", expense.apply_discount())
-
-expense.change_category("Shopping")
-
-print("Total price:", expense.total_price())
-
-print("\n=== Updated Expense ===")
-expense.show_info()
-
-print("\nTotal expenses recorded:", len(expenses))
-
 print("\n=== All Expenses ===")
+
+total_expenses_price = 0
 
 for expense in expenses:
     expense.show_info()
+    total_expenses_price += expense.total_price()
+    
+print("\nTotal expenses recorded:", len(expenses))
+print("Total purchase price: ", total_expenses_price)
