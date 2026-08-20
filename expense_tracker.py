@@ -6,7 +6,7 @@ class Expense:
         self.category = category
 
     def show_info(self):
-        print( self.name)
+        print(self.name)
         print("Amount:", self.amount)
         print("Quantity:", self.quantity)
         print("Category:", self.category)
@@ -30,12 +30,33 @@ continue_adding = "yes"
 
 while continue_adding == "yes":
 
-    name = input("Expense name: ")
-    amount = float(input("Amount: "))
-    quantity = int(input("Quantity: "))
+    while True:
+        name = input("Expense name: ").strip()
+        if name:
+            break
+        else:
+            print("Expense name cannot be empty.")
+    while True:
+        try:
+            amount = float(input("Amount: "))
+            if amount > 0:
+                break
+            else:
+                print("Amount must be positive.")
+        except ValueError:
+            print("Invalid amount! Please enter a valid number.")
+    while True:
+        try:
+            quantity = int(input("Quantity: "))
+            if quantity > 0:
+                break
+            else:
+                print("quantity must be positive.")
+        except ValueError:
+            print("Invalid quantity! Please enter a number.")
     category = input("Category: ")
 
-    expense = Expense( name, amount, quantity, category)
+    expense = Expense(name, amount, quantity, category)
     expenses.append(expense)
 
     continue_adding = input("Add another expense? (yes/no): ")
@@ -49,7 +70,8 @@ total_expenses_price = 0
 
 for expense in expenses:
     expense.show_info()
+    print()
     total_expenses_price += expense.total_price()
     
 print("\nTotal expenses recorded:", len(expenses))
-print("Total purchase price: ", total_expenses_price)
+print("Total purchase price:", total_expenses_price)
