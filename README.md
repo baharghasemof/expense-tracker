@@ -27,6 +27,11 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Multiple expense registration
 - Repeated user input using while loop
 - Total purchase price calculation
+- Input validation
+- Positive amount validation
+- Positive quantity validation
+- Empty name validation
+- Invalid numeric input handling
 
 ## What I Learned
 
@@ -46,6 +51,10 @@ Through this project, I learned:
 - How to create multiple objects from one class.
 - How to store multiple objects in a list.
 - How to calculate the total price of multiple expenses.
+- How to validate user input.
+- How to use try/except with ValueError.
+- How to use while loops for input validation.
+- How to prevent invalid numeric values.
 
 ## Version History
 
@@ -107,9 +116,18 @@ Through this project, I learned:
 - Displayed the total price of all recorded expenses.
 - Tested the program with multiple expenses.
 
+### Version 2.3
+
+- Added input validation.
+- Prevented empty expense names.
+- Prevented non-positive amounts.
+- Prevented non-positive quantities.
+- Added handling for invalid numeric input using try/except.
+- Used while loops to repeatedly request valid input.
+- Tested the program with valid and invalid inputs.
+
 ## Future Improvements
 
-- Add expense categories
 - Calculate total expenses
 - Save data to a file
 - Load data from a file
