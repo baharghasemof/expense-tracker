@@ -32,12 +32,22 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Positive quantity validation
 - Empty name validation
 - Invalid numeric input handling
+- Numbered expense display
+- Expense selection for editing
+- Edit expense name
+- Edit expense amount
+- Edit expense quantity
+- Edit expense category
+- Input validation for expense selection
+- Input validation for edit selection
+- Validation when editing expense information
+- Repeated expense editing using while loop
 
 ## What I Learned
 
 Through this project, I learned:
 
- - How to use Python lists.
+- How to use Python lists.
 - How to store related data in a list.
 - How to use the append() method.
 - How to create classes and objects.
@@ -55,6 +65,16 @@ Through this project, I learned:
 - How to use try/except with ValueError.
 - How to use while loops for input validation.
 - How to prevent invalid numeric values.
+- How to use enumerate() for numbered output.
+- How to use start=1 with enumerate().
+- How to use f-strings for formatted output.
+- How to convert a user-facing number into a list index.
+- How to access an object from a list using its index.
+- How to select and modify an existing object.
+- How to change object attributes.
+- How to use if/elif for menu selection.
+- How to validate menu choices.
+- How to use while loops for repeated editing.
 
 ## Version History
 
@@ -126,13 +146,27 @@ Through this project, I learned:
 - Used while loops to repeatedly request valid input.
 - Tested the program with valid and invalid inputs.
 
+### Version 2.4
+
+- Added numbered display for stored expenses.
+- Added expense selection for editing.
+- Added the ability to edit expense information.
+- Added editing for name, amount, quantity, and category.
+- Added validation for expense selection.
+- Added validation for edit menu selection.
+- Added validation when editing name, amount, and quantity.
+- Added repeated expense editing using a while loop.
+- Used enumerate() to number expenses.
+- Used f-strings for formatted expense display.
+- Used list indexing to access the selected Expense object.
+- Updated and displayed the edited expense.
+- Tested the new editing functionality with valid and invalid inputs.
+
 ## Future Improvements
 
-- Calculate total expenses
 - Save data to a file
 - Load data from a file
 - Search expenses
-- Edit expenses
 - Delete expenses
 - Generate monthly expense reports
 - Create a Graphical User Interface
