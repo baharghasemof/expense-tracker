@@ -42,6 +42,12 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Input validation for edit selection
 - Validation when editing expense information
 - Repeated expense editing using while loop
+- Expense selection for deletion
+- Delete expense
+- Delete confirmation
+- Display deleted expense
+- Display expenses after deletion
+- Repeated expense deletion using while loop
 
 ## What I Learned
 
@@ -75,6 +81,10 @@ Through this project, I learned:
 - How to use if/elif for menu selection.
 - How to validate menu choices.
 - How to use while loops for repeated editing.
+- How to use pop() with a list index.
+- How to remove an object from a list using its index.
+- How to store the removed object returned by pop().
+- How to use a confirmation before deleting an item.
 
 ## Version History
 
@@ -162,12 +172,25 @@ Through this project, I learned:
 - Updated and displayed the edited expense.
 - Tested the new editing functionality with valid and invalid inputs.
 
+###Version 2.5
+
+- Added expense selection for deletion.
+- Added the ability to delete an expense.
+- Added validation for expense selection during deletion.
+- Added delete confirmation.
+- Used pop() to remove an expense from the list by index.
+- Stored and displayed the deleted Expense object.
+- Displayed the remaining expenses after deletion.
+- Added repeated expense deletion using a while loop.
+- Tested deletion of the first, middle, and last expenses.
+- Tested invalid numeric input and invalid expense numbers.
+- Tested deletion confirmation with yes/no inputs.
+
 ## Future Improvements
 
 - Save data to a file
 - Load data from a file
 - Search expenses
-- Delete expenses
 - Generate monthly expense reports
 - Create a Graphical User Interface
 
