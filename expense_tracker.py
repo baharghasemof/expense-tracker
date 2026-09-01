@@ -176,3 +176,58 @@ while continue_editing == "yes":
     continue_editing = input("\nEdit another expense? (yes/no):").strip().lower()
     
 print("\nEdit finished.")
+
+continue_deleting = input("\nDo you want to delete an expense? (yes/no): "
+).strip().lower()
+
+while continue_deleting == "yes":
+    while True:
+        try:
+            expense_number = int(input("\nWhich expense do you want to delete?")
+            )
+            
+            if 1 <= expense_number <= len(expenses):
+                break
+            else:
+                print(
+                f"Please enter a number between 1 and {len(expenses)}."
+                )
+                
+        except ValueError:
+            print("Invalid choice! ‏Please enter a number.")
+            
+    index = expense_number - 1
+    selected_expense = expenses[index]
+    
+    print("\nSelected expense: ")
+    selected_expense.show_info()
+    
+    confirmation = input(
+    "\nAre you sure you want to delete this expense? (yes/no): "
+    ).strip().lower()
+    
+    if confirmation == "yes":
+        deleted_expense = expenses.pop(index)
+        print("\nExpense deleted successfully.")
+        
+        print("\nDeleted expense: ")
+        deleted_expense.show_info()
+    else:
+        print("\nExpense was not deleted.")
+        
+        
+       
+    print("\n=== All Expenses After Deletion ===")
+
+    for i, expense in enumerate(expenses, start=1):
+        print(f"\n{i}. {expense.name}")
+        print("   Amount:", expense.amount)
+        print("   Quantity:", expense.quantity)
+        print("   Category:", expense.category)
+        print("   Total Price:", expense.total_price())
+
+    continue_deleting = input(
+        "\nDelete another expense? (yes/no): "
+    ).strip().lower()
+
+print("\nDelete finished.")
