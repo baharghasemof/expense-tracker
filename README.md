@@ -7,13 +7,13 @@ This is my second Python project.
 The Expense Tracker helps users record and manage their daily expenses in a simple and organized way.
 
 ## Features
+
 - Expense registration
 - User input
 - Formatted output
 - Store expenses in a list
 - Count stored expenses
 - Display stored expenses
-- Display the last recorded expense
 - Object-Oriented Programming (OOP)
 - Expense class
 - Expense attributes
@@ -48,6 +48,17 @@ The Expense Tracker helps users record and manage their daily expenses in a simp
 - Display deleted expense
 - Display expenses after deletion
 - Repeated expense deletion using while loop
+- Search expenses by name
+- Partial name search
+- Display multiple search results
+- Select an expense from search results
+- Display selected expense information
+- Handle unsuccessful searches
+- Repeated expense searching using while loop
+- Main menu
+- Menu-based program navigation
+- Separate functions for major program operations
+- Exit option
 
 ## What I Learned
 
@@ -85,10 +96,19 @@ Through this project, I learned:
 - How to remove an object from a list using its index.
 - How to store the removed object returned by pop().
 - How to use a confirmation before deleting an item.
+- How to search through a list of objects.
+- How to perform partial string matching.
+- How to create a separate list for search results.
+- How to select an object from search results.
+- How to organize program functionality into separate functions.
+- How to create a main menu for a Python program.
+- How to connect functions through menu choices.
+- How to use break to exit a program loop.
 
 ## Version History
 
 ### Version 1.0
+
 - Created the Expense Tracker project.
 - Planned the project structure.
 - Added expense registration.
@@ -96,20 +116,24 @@ Through this project, I learned:
 - Added the README file.
 
 ### Version 1.1
+
 - Introduced Python lists.
 - Stored expense information in a list.
 - Used the append() method.
 - Prepared the project for multiple expense records.
 
 ### Version 1.2
+
 - Added expense counter using len().
 - Displayed the total number of stored expenses.
 
 ### Version 1.3
+
 - Displayed all stored expenses.
 - Used a for loop to show expense records.
 
 ### Version 1.4
+
 - Displayed the last recorded expense.
 - Used negative indexing to access the latest expense.
 
@@ -172,7 +196,7 @@ Through this project, I learned:
 - Updated and displayed the edited expense.
 - Tested the new editing functionality with valid and invalid inputs.
 
-###Version 2.5
+### Version 2.5
 
 - Added expense selection for deletion.
 - Added the ability to delete an expense.
@@ -186,13 +210,34 @@ Through this project, I learned:
 - Tested invalid numeric input and invalid expense numbers.
 - Tested deletion confirmation with yes/no inputs.
 
+### Version 2.6
+
+- Added expense search functionality.
+- Added search by expense name.
+- Added partial name search.
+- Added a separate list for search results.
+- Displayed multiple matching expenses.
+- Added expense selection from search results.
+- Displayed the selected expense information using show_info().
+- Added handling for unsuccessful searches.
+- Added repeated searching using a while loop.
+- Added a main menu for program navigation.
+- Added menu options for adding, displaying, editing, deleting, and searching expenses.
+- Added an exit option.
+- Organized major program operations into separate functions.
+- Connected the program functions through the main menu.
+- Added continuous menu navigation using a while loop.
+- Tested the main menu and program navigation.
+
 ## Future Improvements
 
 - Save data to a file
 - Load data from a file
-- Search expenses
+- Improve data persistence
 - Generate monthly expense reports
 - Create a Graphical User Interface
+- Add statistics and expense summaries
 
 ## Author
+
 Bahar Ghasem Of
